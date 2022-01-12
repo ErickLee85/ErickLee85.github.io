@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Erick Crowne</title>
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./pexels/earthrotation.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text"></h1>
+            <strong>
+                <p class="center">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <q><strong>Everybody should learn to program a computer, because it teaches you how to think.</strong></q><br>
+                    - Steve Jobs, former CEO and creator of Apple</strong><br>
+                    <br><strong>My name is Erick Crowne, welcome to my first ever web page! I hope you enjoy my brief demonstration <br>
+                       of the knowledge I have learned so far from my school:<em> The Tech Academy!</em></strong>
+                   <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                
+               </p>
+           </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./Pexels/iss.jpg" alt="image not found">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>A little about me</h1>
+                <p>
+                    <br>   I am a proud Software Development student for <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>
+                    <br>     I love all the sciences but mainly: astronomy, biology and computing! When I was a kid I would play video games
+                            incessantly and couldn't wait to upgrade my hardware for better performance. I was shocked by the beauty of the motherboard
+                            and all the other components within it; it lit the flame for my curiosity of how it all works! 
+                         I'm a Husband to a beautiful wife and a father to 2 lovely kids (Vayda and Maverick) I couldn't live without.
+                       I look forward to hearing from you! <br> <a href="#Contact">Contact</a> me below!
+                   </p>
+               </div>
+           </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/ErickLee85" target="_blank">Take the Red Pill</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://www.github.com" target="_blank"><img src="GitHub-logo.png"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="./Pexels/contact.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/meqnoyao" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your full name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Erick Crowne Coding</p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
