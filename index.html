@@ -1,129 +1,142 @@
 <!DOCTYPE html>
 <html>
-    <!--Head-->
+    
+    <!-- Head -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
-        <title>Erick Crowne</title>
-        <link rel="stylesheet" type="text/css" href="portfolio.css">
-        <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico">
+        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+        <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
     </head>
 
-    <!--Body-->
-    <body class="Background">
-        
-        <!--Navbar-->
+    <!-- Body -->
+    <body class="Background">   
+
+        <!-- Navbar -->
         <div class="Navbar">
             <a href="#Home">Home</a>
+            <!-- New section added -->
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            
         </div>
 
-        <!--Breaks inserted to add space between navbar and the first heading-->
-        <br>
-        <br>
-
-        <!--Background video-->
+        <!-- Background video -->
         <div id="Home">
             <video autoplay muted loop id="Typing_Video">
-                <source src="./Pexels/earthrotation.mp4" type="video/mp4">
-                <!--Display message if video fails to run-->
+                <source src="media/typing.mp4" type="video/mp4">
+                <!-- Display message if video fails to run -->
                 Your browser does not support HTML5 video.
             </video>
         </div>
 
-        <!--Video text-->
+        <!-- Video text -->
         <div class="Video_Text">
-            <h1 class="white-text"></h1>
             <strong>
                 <p class="center">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <q><strong>Everybody should learn to program a computer, because it teaches you how to think.</strong></q><br>
-                    - Steve Jobs, former CEO and creator of Apple</strong><br>
-                    <br><strong>My name is Erick Crowne, welcome to my first ever web page! I hope you enjoy my brief demonstration <br>
-                       of the knowledge I have learned so far from my school:<em> The Tech Academy!</em></strong>
-                   <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                
-               </p>
-           </strong>
+                   Hello my name is Erick Crowne and I am a proud Software Development 
+                <br> student for <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>
+                <br>Here is my first attempt at creating a portfolio website,
+                 <br> I hope you enjoy it!
+                </p>
         </div>
 
-        <!--About section-->
-        <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2">
-                <img src="./Pexels/iss.jpg" alt="image not found">
-            </div>
-            <!--Right column-->
-            <div class="Column_1">
-                <h1>A little about me</h1>
-                <p>
-                    <br>   I am a proud Software Development student for <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>
-                    <br>     I love all the sciences but mainly: astronomy, biology and computing! When I was a kid I would play video games
-                            incessantly and couldn't wait to upgrade my hardware for better performance. I was shocked by the beauty of the motherboard
-                            and all the other components within it; it lit the flame for my curiosity of how it all works! 
-                         I'm a Husband to a beautiful wife and a father to 2 lovely kids (Vayda and Maverick) I couldn't live without.
-                       I look forward to hearing from you! <br> <a href="#Contact">Contact</a> me below!
-                   </p>
-               </div>
-           </div>
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="media/DSC_0388.JPG" alt="Picture of yourself">
+                        <div class="text">I would love to assist you with your projects!</div>
+                    </div>
+                    <!-- Slide 2 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="media/htmlcssjs.jpg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am currently proficient in: HTML, CSS & JavaScript.</div>
+                    </div>
+                   
+                    <!-- Slide 3 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="media/contact.jpg" alt="Contact Image"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
 
-        <!--GitHub section-->
-        <div class="Row" id="GitHub">
-            <!--Left column-->
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2">
+                <h2><em>Hover over the square</em></h2>
+                <div class="box"></div>
+            </div>
+            <!-- Right column -->
             <div class="Column_1">
-                <h1>GitHub</h1>
+                <h1>About</h1>
                 <p>
-                    You can view my coding projects on my GitHub profile here:
+                    I am a <em>software development student</em> with an unwavering hunger for knowledge.
+                My wife and two children are the focus of my <strong>life</strong> as well as my
+                <em>career</em>. Coding is truly an <em>art</em>, as a digital creator we are the
+                 artists behind the scenes, and I'm proud to join this community!
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub section -->
+        <div class="Row" id="GitHub">
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>Repository</h1>
+                <p>You can view my coding projects on my GitHub profile here:
                     <br>
                     <p class="center"><a href="https://github.com/ErickLee85" target="_blank">Take the Red Pill</a></p>
                 </p>
             </div>
-            <!--Right column-->
-            <div class="Column_2">
-                <a href="https://www.github.com" target="_blank"><img src="GitHub-logo.png"></a>
+            <!-- Right column -->
+            <div class="Column_3">
+                <img src="media/pexels-pixabay-270360.jpg" height="100%" width="100%"></a>
             </div>
         </div>
 
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="./Pexels/contact.jpg" alt="Contact_Image">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="https://formspree.io/f/meqnoyao" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your full name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+        <!-- Contact form -->
+        <div id="Contact">
+           <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+           <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
+         
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
-            </div>
+           </div>
         </div>
-
-        <!--Footer section-->
+        
+        <!-- Footer section -->
         <footer>
-            <p>
-                <p class="center">&copy Erick Crowne Coding</p>
-                <br>
-            </p>
+                <p>&copy Erick Crowne Coding</p>
         </footer>
+        <script src="JS/portfolio.js"></script>
     </body>
 </html>
