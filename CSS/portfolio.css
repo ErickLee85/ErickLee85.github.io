@@ -96,11 +96,12 @@ footer {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
     background-color: black; /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
+    display: inline-block;
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 1; /* This ensures other elements don't display over the navbar */
-    -webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
-    animation: moveNav 5s; /* This makes the moveNav animation last 5 seconds */
+    -webkit-animation: moveNav 3s; /* Safari 4.0 - 8.0 */
+    animation: moveNav 3s; /* This makes the moveNav animation last 5 seconds */
 }
 
 /* The animation effect for moving the nav bar in from above the left of the screen on page load */
@@ -120,8 +121,17 @@ footer {
     font-size: 1.0vw; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
-    animation: moveNavText 5.75s; /* Applies the moveNavText animation for 5.75s */ 
+    -webkit-animation: moveNavText 3.75s; /* Animation for Safari 4.0 - 8.0 */
+    animation: moveNavText 3.75s; /* Applies the moveNavText animation for 5.75s */ 
+}
+
+.Navbar li {
+    display: inline-block;
+}
+
+.Navbar ul {
+    list-style: none;
+    text-align: center;
 }
 
 /* The animation effect for moving the nav bar links in from above the top of the screen on page load */
@@ -133,8 +143,7 @@ footer {
 /*Navbar hover effects */
 .Navbar a:hover {
     background-color: #f4f4f4; /* Defines the background color that will display when you hover over the link */
-    color: black; /* This defines the font color that will display when navbar a elements are hovered over */
-    font-weight: bold; /* This makes the text on the navbar bold when hovered over */
+    color: black; /* This defines the font color that will display when navbar a elements are hovered over */ 
     cursor: pointer;
     transition: 0.5s ease-in; /* Creates a smooth transition for the hover trigger */
 }
@@ -373,7 +382,7 @@ footer {
     position: fixed; /* The element is positioned relative to the viewport and stays in the same location no matter what */
     bottom: 1.75vw; /* Positions the button slightly up from the bottom of the viewport */
     right: 1.75vw; /* Positions the viewport slightly right from the side of the viewport */
-    width: 25vw; /* Sets the width relative to the viewport width */
+    width: 15vw; /* Sets the width relative to the viewport width */
     background-color: white; /* Sets the background color of the button to white */
     color: black; /* Sets the color of the button text to black */
     border: solid black; /* This makes a solid black border around the button */
@@ -400,6 +409,7 @@ footer {
     position: fixed; /* The form stays in the same location no matter what */
     bottom: 2.5vw; /* Slightly up from the bottom of the viewport */
     right: 38vw; /* centered from the right side of viewport*/
+    top: 2.7vw;
 }
 
 /* Form styling */

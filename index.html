@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width" />
         <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
         <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <!-- Body -->
@@ -14,12 +15,12 @@
 
         <!-- Navbar -->
         <div class="Navbar">
-            <a href="#Home">Home</a>
-            <!-- New section added -->
-            <a href="#Slideshow">Slideshow</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            
+            <ul>
+                <li><a href="#Home"><i class="fa fa-fw fa-home"></i>Home</a></li>  
+                <li><a href="#Slideshow"><i class="fa fa-slideshare" aria-hidden="true"></i>Slideshow</a></li>  
+                <li><a href="#About"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>  
+                <li><a href="#GitHub"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>  
+            </ul>
         </div>
 
         <!-- Background video -->
@@ -54,7 +55,12 @@
                     <!-- Slide 2 of 3 -->
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="media/htmlcssjs.jpg" alt="HTML, CSS, and JS logos"> 
-                        <div class="text">I am currently proficient in: HTML, CSS & JavaScript.</div>
+                        <div class="text">My Skillbase: HTML, CSS, JavaScript-</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="media/phyton-django.jpg" alt="SQL, Python and Django logos"> 
+                        <div class="text">SQL, Python & Django.</div>
                     </div>
                    
                     <!-- Slide 3 of 3 -->
@@ -73,6 +79,7 @@
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
             </div>
         </div>
