@@ -123,6 +123,7 @@ footer {
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNavText 3.75s; /* Animation for Safari 4.0 - 8.0 */
     animation: moveNavText 3.75s; /* Applies the moveNavText animation for 5.75s */ 
+    text-transform: uppercase;
 }
 
 .Navbar li {
