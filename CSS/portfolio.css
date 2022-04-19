@@ -102,6 +102,7 @@ footer {
     z-index: 1; /* This ensures other elements don't display over the navbar */
     -webkit-animation: moveNav 3s; /* Safari 4.0 - 8.0 */
     animation: moveNav 3s; /* This makes the moveNav animation last 5 seconds */
+    opacity: 0.8;
 }
 
 /* The animation effect for moving the nav bar in from above the left of the screen on page load */
@@ -118,12 +119,13 @@ footer {
     padding: .75vw 1vw; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
     font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
-    font-size: 1.0vw; /* This specifies the font size for text on our navbar */
+    font-size: 1.5vw; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNavText 3.75s; /* Animation for Safari 4.0 - 8.0 */
     animation: moveNavText 3.75s; /* Applies the moveNavText animation for 5.75s */ 
     text-transform: uppercase;
+    transition-duration: 0.5s;
 }
 
 .Navbar li {
@@ -132,7 +134,7 @@ footer {
 
 .Navbar ul {
     list-style: none;
-    text-align: center;
+    
 }
 
 /* The animation effect for moving the nav bar links in from above the top of the screen on page load */
@@ -141,12 +143,16 @@ footer {
     to {top: 0vw;} /* This lowers the navbar text onto the navbar */
 }
 
+.Navbar ul:hover li a {
+    opacity: 0
+}
+
 /*Navbar hover effects */
-.Navbar a:hover {
-    background-color: #f4f4f4; /* Defines the background color that will display when you hover over the link */
-    color: black; /* This defines the font color that will display when navbar a elements are hovered over */ 
-    cursor: pointer;
-    transition: 0.5s ease-in; /* Creates a smooth transition for the hover trigger */
+.Navbar ul li a:hover {
+    transform: scale(1.5);
+    z-index: 1000;
+    background: #2A48F5;
+    opacity: 1; /* Creates a smooth transition for the hover trigger */
 }
 
 /* Navbar home button */
@@ -333,7 +339,7 @@ footer {
     width: 50%;
     padding: 1.6%;
     height: 450px;
-    background-color: #03a1a7;
+    background-color: #030303;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -352,22 +358,97 @@ footer {
 
 }
 
-.box {
-    width: 200px;
-    height: 200px;
-    background: greenyellow;
-    border: 3px solid orange;
-    transition-duration: 2000ms;
-    opacity: .7;
+.parent {
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 2s ease-in-out;
+    transition-duration: 10s;
+}
+.child {
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 2s ease-in-out;
+    transition-duration: 15s;
 }
 
-.box:hover {
-    background: orange;
-    border: 3px solid greenyellow;
-    transform: rotate(360deg);
-    cursor: pointer;
-    opacity: 1;
+.child:active {
+    animation: colors 1s ease-in forwards infinite alternate;
 }
+
+@keyframes colors {
+    0% {
+       background-color: red;
+       
+     }
+     20% {
+         background-color: orange;
+         border: 1px solid white;
+     }
+     40% {
+         background-color: yellow;
+         
+     }
+     60% {
+         background-color: green;
+         border: 1px solid white;
+     }
+     80% {
+         background-color: blue;
+        
+     }
+     100% {
+         background-color: blueviolet;
+         border: 1px solid white;
+     }
+}
+
+.parent:active {
+    animation: colorstoo 1s ease-in forwards infinite;
+    transform: 
+    rotateY(90deg) rotateY(150deg) rotateY(270deg) rotateY(360deg)
+    rotateX(90deg) rotateX(150deg) rotateX(270deg) rotateX(360deg)
+    rotate(90deg) rotate(180deg) rotate(270deg) rotate(360deg)
+    rotateX(90deg) rotateX(150deg) rotateX(270deg) rotateX(360deg)     
+    rotateY(90deg) rotateY(180deg) rotateY(270deg) rotateY(360deg);
+}
+
+@keyframes colorstoo {
+    0% {
+        border: 3px solid red;
+    }
+    20% {
+        border: 3px solid  orange;
+
+    }
+    40% {
+        border: 3px solid  yellow;
+    }
+    60% {
+        border: 3px solid  green;
+    }
+     80% {
+        border: 3px solid  blue;
+     }  
+     100% {
+         border: 3px solid  blueviolet;
+     }
+}
+
+.multicolortext {
+    background-image: linear-gradient(to left, violet, indigo, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
 .Row:after {
