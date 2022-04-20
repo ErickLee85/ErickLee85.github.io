@@ -148,9 +148,7 @@ footer {
 
 /*Navbar hover effects */
 .Navbar ul li a:hover {
-    transform: scale(1.5);
     z-index: 1000;
-    background: #2A48F5;
     opacity: 1; /* Creates a smooth transition for the hover trigger */
 }
 
