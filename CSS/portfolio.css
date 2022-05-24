@@ -94,7 +94,7 @@ footer {
 /***** Navbar Styling *****/
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-    background-color: black; /* This colors the navbar black */
+    background-color: rgba(0, 0, 0, 0.7); /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     display: inline-block;
     top: 0; /* This ensures no space is displayed above the navbar */
@@ -124,7 +124,7 @@ footer {
     -webkit-animation: moveNavText 3.75s; /* Animation for Safari 4.0 - 8.0 */
     animation: moveNavText 3.75s; /* Applies the moveNavText animation for 5.75s */ 
     text-transform: uppercase;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
 
 .Navbar li {
@@ -149,6 +149,7 @@ footer {
 /*Navbar hover effects */
 .Navbar ul li a:hover {
     z-index: 1000;
+    color:rgb(8, 181, 255);
     opacity: 1; /* Creates a smooth transition for the hover trigger */
 }
 
