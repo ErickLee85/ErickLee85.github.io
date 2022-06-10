@@ -15,18 +15,18 @@
     </head>
 
     <!-- Body -->
-    <body class="Background">   
+    <body onload="contentLoader()" class="Background">   
 
         <!-- Navbar -->
         <div class="Navbar">
             <ul>
                 <li><a href="#Home"><i class="fa fa-fw fa-home"></i></a></li>  
                 <li><a href="#Slideshow">Slideshow</a></li>  
-                <li><a href="#About">About</a></li>  
+                <li><a href="#About">API</a></li>  
                 <li><a href="#GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                 <li class="datetime">
-                    <div class="time">10:37 AM</div>
-                    <div class="date">Thursday June 9 2022</div>
+                    <div class="time"></div>
+                    <div class="date"></div>
                 </li>
             </ul>
         </div>
@@ -108,20 +108,20 @@
         <div class="Row" id="About">
             <!-- Left column -->
             <div class="Column_2">
-                <h2 class = "multicolortext"><em>Click and hold the circle</em></h2>
-                <div class="parent">
-                    <div class="child"></div>
+                <div class="api_Content">
+                   
+                        <h1 id="api_Date"></h1>
+                        <h3 id="api_Title"></h3>
+                
+                    <div id="api_Img">
+                    </div>
                 </div>
             </div>
             <!-- Right column -->
             <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    I am a <em>Full Stack Developer</em> with an unwavering hunger for knowledge.
-                My wife and two children are the focus of my <strong>life</strong> as well as my
-                <em>career</em>. Coding is truly an <em>art</em>, as a digital creator we are the
-                 artists behind the scenes, and I'm proud to join this community!
-                </p>
+                <p>Explanation</p>
+               <h5 id="api_Description"></h5>
+               <a href="https://api.nasa.gov/" target="_blank">NASA API</a>
             </div>
         </div>
 

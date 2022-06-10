@@ -164,6 +164,7 @@ footer {
     z-index: 1000;
     color:rgb(8, 181, 255);
     opacity: 1; /* Creates a smooth transition for the hover trigger */
+    text-transform: uppercase;
 }
 
 /* Navbar home button */
@@ -335,26 +336,58 @@ footer {
 .Column_1 {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 1.6%;
+    padding: 2%;
     height: 450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the left columns */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 1.6;
+    font-size:0.5vw;
+    overflow: scroll;
+    line-height:1.25;
+
 }
 
 .Column_2 {
     float: left;
     width: 50%;
-    padding: 1.6%;
     height: 450px;
     background-color: #030303;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.api_Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#api_Title {
+    color: white;
+    position: absolute;
+    margin-top: -30%;
+    background-image: linear-gradient(to left, violet, indigo, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#api_Date {
+    color: white;
+    position: absolute;
+    margin-top: -40%;
+    font-style: italic;
+}
+#api_Img {
+    height: 100%;
+    width: 100%;   
 }
 
 .Column_3 {
@@ -453,13 +486,9 @@ footer {
      }
 }
 
-.multicolortext {
-    background-image: linear-gradient(to left, violet, indigo, orange, red);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
+
+
+
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
 .Row:after {

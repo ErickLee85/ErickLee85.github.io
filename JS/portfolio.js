@@ -82,3 +82,21 @@ setInterval(() => {
 }, 200);
 
 //-------------------------------------------------------
+
+function contentLoader() {
+    sendApiReq();
+};
+
+async function sendApiReq() {
+    const APIKEY = 'OA1OUuOPLVxRuns39RWFzg9bldZ0r02kO8ylw4vD';
+    const res = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${APIKEY}`);
+    const data = await res.json();
+    useApiData(data)
+}
+
+function useApiData(data) {
+    document.querySelector("#api_Title").innerHTML += data.title
+    document.querySelector("#api_Img").innerHTML += `<img src="${data.url}"/> <br/>`;
+    document.querySelector("#api_Description").innerHTML += data.explanation
+    document.querySelector("#api_Date").innerHTML += data.date
+}
