@@ -117,8 +117,7 @@ footer {
     color: white; /* This is the font color for text on our navbar */
     padding: .75vw 1vw; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
-    font-size: 1.5vw; /* This specifies the font size for text on our navbar */
+    font-family: 'Joan', serif; /* This specifies the font family for text on our navbar */ /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNavText 3.75s; /* Animation for Safari 4.0 - 8.0 */
@@ -134,6 +133,20 @@ footer {
 .Navbar ul {
     list-style: none;
     
+}
+
+.Navbar li:last-child {
+    float:right;
+}
+
+.datetime {
+    color: #ffff;
+    padding-right:10px;
+}
+
+.time {
+    font-size: 1.5em;
+    color:rgb(8, 181, 255);
 }
 
 /* The animation effect for moving the nav bar links in from above the top of the screen on page load */
