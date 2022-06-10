@@ -46,6 +46,8 @@ document.addEventListener("click", function(event){
     }
 }, false )
 
+// ---------Navbar Time Widget-------
+
 const timeElement = document.querySelector(".time");
 const dateElement = document.querySelector(".date");
 
@@ -78,3 +80,5 @@ setInterval(() => {
     timeElement.textContent = formatTime(now);
     dateElement.textContent = formatDate(now);
 }, 200);
+
+//-------------------------------------------------------
