@@ -17,6 +17,7 @@ body {
     user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
     background-image: url("../media/andromeda.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
