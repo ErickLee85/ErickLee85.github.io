@@ -15,7 +15,10 @@ body {
     font-size: 1.5vw; 
     overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
     user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
+    background-image: url("../media/andromeda.jpg");
+    background-size: contain;
 }
+
 
 /* This section contributes to the fade effect for the page that occurs when the page is loaded */
 body.fade-out {
@@ -31,18 +34,6 @@ h1 {
     color: #1a1a1a; 
 }
 
-/* Heading 1 element hover effect */
-h1:hover {
-    filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
-    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
-    transition: transform 1s; /* This causes the transformation to last 1 second */
-}
-
-/* Styling for Portfolio Title Text */
-.white-text {
-    color: #fff;/* This is used to change the color of the Portfolio Title text */
-    padding-top: 10vh; /* Adds padding (equal to 10% of the viewport height) to the top of the Portfolio Title text */
-}
 
 /* Paragraph elements */
 p {
@@ -64,7 +55,7 @@ p {
 a {
     color: blue; /* This ensures all links are blue */
     cursor: pointer; /* This ensures all links change the mouse to a pointer when hovered over or clicked */
-    text-decoration: underline; /* This ensures all links are underlined */
+    text-decoration: none;
 }
 
 /* Quotation elements */
@@ -86,8 +77,9 @@ img {
 /*Styling for footer element */
 footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: white;
+    background-color: whitesmoke;
     text-align: left;
+  
 }
 /***** End of General Styling *****/
 
@@ -164,7 +156,6 @@ footer {
     z-index: 1000;
     color:rgb(8, 181, 255);
     opacity: 1; /* Creates a smooth transition for the hover trigger */
-    text-transform: uppercase;
 }
 
 /* Navbar home button */
@@ -174,33 +165,18 @@ footer {
 
 /***** End of Navbar Styling *****/
 
-/***** Video Styling *****/
-/* Formatting for background video */
-#Typing_Video {
-    position: fixed; /* This fixes the video to the page */
-    right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
-    bottom: 0; /* This ensures no space between the edge of the video and the bottom of the page */
-    min-width: 100%; /* This ensures the video is displayed across the full width of the page */
-    z-index: -1; /* This places the video behind the other elements on the page */
-}
 
-/* Screens that are 576px and smaller will not display the background video */
-@media screen and (max-width: 576px) {
-    #Typing_Video {
-        display: none;
-    }
-}
+
 
 /* Texts over the video */
-.Video_Text {
-    background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparents background for the text to sit over */
+.Video_Text { /* This provides a semi-transparents background for the text to sit over */
     color: white; /* Makes the font color white */
-    line-height: 1.6;
+    line-height: 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%; /* Ensures the video-text container fills the width of the video */
-    height: 60vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
+    height: 45vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
     padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveVideoText 5.75s; /* Animation for Safari 4.0 - 8.0 */
@@ -218,9 +194,7 @@ footer {
 /***** End of Video Styling *****/
 
 /***** Slideshow Styling *****/
-#Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's placed over the video in the background */    
-}
+
 
 .mySlides{
     display: none; /* This prevents the images from being displayed, we will use JS to display these */
@@ -229,8 +203,7 @@ footer {
 /* Slideshow section / container */
 #Slideshow_Container {
     width: 39.5vw; /* Relative sizing of the container for the slidewshow set to 39.5% of the viewport width */
-    height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
-    padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
+    height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */ /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
     margin:auto; /* This will horizontally center the container on the page */
 }
@@ -244,7 +217,7 @@ footer {
 .Slideshow_Images {
     vertical-align: middle; /* This centers the images vertically within the slideshow container */
     height: auto; /* The height of the images is automatically adjusted based on the content, ie if your images are different sizes, they will display as different sizes */
-    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
+    box-shadow: 0px 5px 10px 12px rgba(232, 230, 230, 0.1); /* Adds a shadow around the slideshow images */
     width: 100%; /* The width of the images is automatically adjusted based on the content */
 }
 
@@ -306,7 +279,7 @@ footer {
 
 /* Hover effect for slideshow dots */
 .active, .dot:hover {
-    background-color: black; /* Sets the color of the dots when active or hovered over */
+    background-color: rgb(8, 181, 255); /* Sets the color of the dots when active or hovered over */
 }
 
 /* Fading animation for slideshow */
