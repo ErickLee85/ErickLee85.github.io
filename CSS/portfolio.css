@@ -72,15 +72,9 @@ img {
     margin: auto auto auto auto; /* This centers all images */
 }
 
-/* Image element hover effects */
 
-/*Styling for footer element */
-footer {
-    padding-top: 5%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: whitesmoke;
-    text-align: left;
-  
-}
+
+
 /***** End of General Styling *****/
 
 /***** Navbar Styling *****/
@@ -315,13 +309,12 @@ footer {
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 2%;
     height: 450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #f2f2f2; /* Sets the background color of the left columns */
+    background-color:rgb(8, 181, 255); /* Sets the background color of the left columns */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size:0.5vw;
-    overflow: scroll;
     line-height:1.25;
 
 }
