@@ -209,6 +209,7 @@ footer {
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */ /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
     margin:auto; /* This will horizontally center the container on the page */
+    opacity: 0.9;
 }
 
 /* Remove the underline from the previous and next buttons on the slideshow */
