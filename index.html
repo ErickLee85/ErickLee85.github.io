@@ -21,7 +21,6 @@
         <div class="Navbar">
             <ul>
                 <li><a href="#Home"><i class="fa fa-fw fa-home"></i></a></li>  
-                <li><a href="#Slideshow">Slideshow</a></li>  
                 <li><a href="#About">API</a></li>  
                 <li><a href="#GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                 <li class="datetime">
@@ -30,6 +29,7 @@
                 </li>
             </ul>
         </div>
+        <p id="Home"></p>
 
         <!-- Slideshow section added -->
         <div id="Slideshow">
@@ -37,7 +37,7 @@
                 <div id="Slideshow_Container">
                     <!-- Slide 1 of 3 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="media/DSC_0388.JPG" alt="Picture of yourself">
+                        <img class="Slideshow_Images" src="media/flyDay.jpg" alt="Picture of yourself">
                         <div class="text">Hi I'm Erick Crowne!</div>
                     </div>
                     <!-- Slide 2 of 3 -->
@@ -99,9 +99,9 @@
             </div>
             <!-- Right column -->
             <div class="Column_1">
-                <p>Astronomy Photo of Day</p>
+                <p style="font-style:italic;">Astronomy Photo of Day using NASA API</p>
+                
                <h1 id="api_Description"></h1>
-               <p><a href="https://api.nasa.gov/" target="_blank">NASA API</a></p>
             </div>
         </div>
 
@@ -109,16 +109,36 @@
         <div class="Row" id="GitHub">
             <!-- Left column -->
             <div class="Column_1">
-                <p>Repository</p>
-                <h1>You can view my coding projects on my GitHub profile here:
+                <p style="font-style:italic;">Getting Creative</p>
+                <h1>This is a Python GUI I created that calculates <br>
+                    a celestial bodies orbital perdiod based off <br>
+                    it's distance from our Sun.
                     <br>
-                    <p class="center"><a href="https://github.com/ErickLee85" target="_blank">Take the Red Pill</a></p>
+                    <p class="center"><a href="https://github.com/ErickLee85/Python-Projects/tree/main/OrbitalGUI" target="_blank">Source Code</a></p>
                 </h1>
             </div>
             <!-- Right column -->
             <div class="Column_3">
-                <img src="media/pexels-pixabay-270360.jpg" height="100%" width="100%"></a>
+                <img src="media/orbitalGUI.png" height="100%" width="100%">
             </div>
+        </div>
+
+        <div class="Column_2">
+            <img src="media/pythonDjangoCRUD.png" height="100%" width="100%">
+        </div>
+        <div class="Column_1">
+            <p style="font-style:italic;">Python/DJjango CRUD Live Project with Azure DevOps</p>
+            <p class="center"><a href="https://github.com/ErickLee85/LiveProject-CodeSummary" target="_blank">Code Summary</a></p>
+        </div>
+
+        <div class="Column_1">
+            <p style="font-style:italic;">C#/.NET Live Project Full MVC Web App with Azure DevOps</p>
+            <p class="center"><a href="" target="_blank">Code Summary</a></p>
+        </div>
+
+        <div class="Column_3">
+          
+            <img src="media/CsharpMVC.png" height="100%" width="100%">
         </div>
 
         <!-- Contact form -->
@@ -140,12 +160,6 @@
                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
            </div>
-        </div>
-        
-        <!-- Footer section -->
-        <footer>
-            <a href="mailto:ErickCrowne@outlook.com">ErickCrowne@outlook.com</a></p>
-        </footer>
-        
+        </div>       
     </body>
 </html>

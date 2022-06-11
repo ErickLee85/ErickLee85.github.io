@@ -66,7 +66,6 @@ q {
 
 /* Image elements */
 img {
-    border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
     max-height: 100%; /* Ensures all images stay within the height of their container */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
@@ -77,7 +76,7 @@ img {
 
 /*Styling for footer element */
 footer {
-    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+    padding-top: 5%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
     background-color: whitesmoke;
     text-align: left;
   
@@ -121,6 +120,7 @@ footer {
 
 .Navbar li {
     display: inline-block;
+    gap: 50px;
 }
 
 .Navbar ul {
@@ -205,11 +205,11 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 39.5vw; /* Relative sizing of the container for the slidewshow set to 39.5% of the viewport width */
-    height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */ /* Adds a small padding to the top of the slideshow container */
+    max-width: 39.5vw; /* Relative sizing of the container for the slidewshow set to 39.5% of the viewport width */
+    max-height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */ /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
     margin:auto; /* This will horizontally center the container on the page */
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 /* Remove the underline from the previous and next buttons on the slideshow */
@@ -221,7 +221,7 @@ footer {
 .Slideshow_Images {
     vertical-align: middle; /* This centers the images vertically within the slideshow container */
     height: auto; /* The height of the images is automatically adjusted based on the content, ie if your images are different sizes, they will display as different sizes */
-    box-shadow: 0px 5px 10px 12px rgba(232, 230, 230, 0.1); /* Adds a shadow around the slideshow images */
+    box-shadow: 0px 5px 10px 12px rgba(232, 230, 230, 0.3); /* Adds a shadow around the slideshow images */
     width: 100%; /* The width of the images is automatically adjusted based on the content */
 }
 
@@ -237,7 +237,7 @@ footer {
     font-size: 1.5vw;
     border-radius: 0 3px 3px 0; /* Adds a slightly rounded border on the top and bottom right corners */
     user-select: none; /* This property makes it so that the user cannot highlight the text */
-    transition: 0.6s ease; /* This specifies the details of the hover transition for these elements */
+    transition: 0.8s ease; /* This specifies the details of the hover transition for these elements */
 }
 
 /* Positioning the next button on the right hand side */
@@ -513,7 +513,7 @@ footer {
 
 /* Form styling */
 .form-container {
-    max-width: 25vw; /* Relative sizing of the form container - 49% of the viewport width */
+    max-width: 30vw; /* Relative sizing of the form container - 49% of the viewport width */
     padding: 1vw; /* Adds padding between the form-popup and the form-container */
     background-color: white; 
     margin-left: 38vw;
@@ -528,6 +528,12 @@ footer {
     background: Gainsboro; /* Sets the background color of the input boxes */
     font-size: 1vw; /* Relative font sizing based on the width of the viewport */
 }
+
+.form-container input:focus {
+    background-color: rgb(8, 181, 255,0.2);
+    transition: ease-in-out 0.5s;
+}
+
 
 /* General styling for all buttons */
 button {
