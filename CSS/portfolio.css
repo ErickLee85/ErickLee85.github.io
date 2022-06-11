@@ -195,7 +195,9 @@ footer {
 /***** End of Video Styling *****/
 
 /***** Slideshow Styling *****/
-
+#Slideshow {
+    margin-top: 10%;
+}
 
 .mySlides{
     display: none; /* This prevents the images from being displayed, we will use JS to display these */
