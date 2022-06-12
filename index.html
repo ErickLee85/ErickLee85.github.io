@@ -145,16 +145,16 @@
         <div id="Contact">
            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
            <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                <form action="https://formspree.io/f/xjvlzaao" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
                     <h1>Contact</h1>
                    
                       <input type="text" placeholder="First and last name" name="name" required>
                    
                       <input type="text" placeholder="Phone Number" name="phone" required>
                    
-                      <input type="text" placeholder="Email Adddress" name="email" required>
+                      <input type="email" placeholder="Email Adddress" name="email" required>
                     
-                      <input type="text" placeholder="Detailed message" name="message" required>
+                      <input type="text" placeholder="message" name="message" required>
          
                     <button type="submit" class="btn">SUBMIT</button>
                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
