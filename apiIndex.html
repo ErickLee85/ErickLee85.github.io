@@ -16,6 +16,16 @@
           background-size: cover;
         }
 
+          @-webkit-keyframes img {
+          from {opacity: .4;} /* Image starts transparent */
+          to {opacity: 1;} /* Image ends opaque */
+        }
+
+          @keyframes img {
+              from {opacity: .4;} /* Image starts transparent */
+              to {opacity: 1;} /* Image ends opaque */
+          }
+
         .container {
             display: flex;
             justify-content: center;
