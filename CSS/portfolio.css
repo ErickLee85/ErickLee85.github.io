@@ -307,7 +307,7 @@ img {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 2%;
-    height: 65vh; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    height: 65vh; 
     background-color:rgb(8, 181, 255); /* Sets the background color of the left columns */
     display: flex;
     flex-direction: column;
@@ -511,6 +511,7 @@ img {
     padding: 1vw; /* Adds padding between the form-popup and the form-container */
     background-color: white; 
     margin-left: 38vw;
+    box-shadow: 8px 10px 0px rgb(69, 69, 69);
 }
 
 /* Input fields */
