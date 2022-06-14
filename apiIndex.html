@@ -4,51 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/astronomy.css">
+    <script type="text/javascript" src="JS/astronomy.js" defer></script>
     <title>Astronomy</title>
 </head>
 <body>
   
     <h1 class="container" style="color: white;">Astronomy API</h1>
-    <style>
-        * {
-          margin: 0;
-          padding: 0;
-        }
-        body {
-          background-image: url("https://source.unsplash.com/1600x900/?space");
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 100vh;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5vh;
-
-        }
-        table {
-            width: 400px;
-            height: 300px;
-            background-color: rgb(235,74,128,0.8);
-            opacity: 0.9;
-            border: 4px solid black;
-    
-        }
-        table td {
-          color: white;
-          font-weight: bold;
-          font-family: cursive;         
-        }
-
-        input {
-          border-radius: 10px;
-          height: 35px;
-          padding-left: 10px;
-          border: none;
-        }
-    </style>
     
     <div class="container">
         <fieldset>
@@ -106,44 +68,6 @@
           <button type="button" class="btn btn-danger btn-lg">Home</button>
         </a>    
     </div>
-   
-    <script>
-        async function getUserCity() {
-            const userCity = document.getElementById("cityGET").value;
-
-            if (!userCity) {
-            alert("Please enter a valid city.");
-            return;
-            }
-
-            const options = {
-            method: 'GET',
-            headers: {
-            'X-RapidAPI-Key': '1aed881129msh0e4e702933d3b57p1d0a71jsnaba2c0d6b2f8',
-            'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
-            }
-            };
-
-            const response = await fetch(`https://weatherapi-com.p.rapidapi.com/astronomy.json?q=${userCity}`, options);
-            const data = await response.json();
-            
-
-            document.getElementById("sunrise").innerHTML = (data["astronomy"]["astro"]["sunrise"]);
-            document.getElementById("sunset").innerHTML = (data["astronomy"]["astro"]["sunset"]);
-            document.getElementById("moonrise").innerHTML = (data["astronomy"]["astro"]["moonrise"]);
-            document.getElementById("moonset").innerHTML = (data["astronomy"]["astro"]["moonset"]);
-            document.getElementById("moonphase").innerHTML = (data["astronomy"]["astro"]["moon_phase"]);
-            document.getElementById("moonillumination").innerHTML = (data["astronomy"]["astro"]["moon_illumination"]);
-            document.getElementById("country").innerHTML = (data["location"]["country"]);
-            document.getElementById("lat").innerHTML = (data["location"]["lat"]);
-            document.getElementById("long").innerHTML = (data["location"]["lon"]);
-            document.getElementById("name").innerHTML = (data["location"]["name"]);
-            document.getElementById("region").innerHTML = (data["location"]["region"]);
-            document.getElementById("localtime").innerHTML = (data["location"]["localtime"]);
-            
-            
-            }
-    </script>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </body>

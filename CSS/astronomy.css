@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url("https://source.unsplash.com/1600x900/?astronomy");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5vh;
+
+  }
+  table {
+      width: 400px;
+      height: 300px;
+      background-color: rgb(235,74,128,0.8);
+      opacity: 0.9;
+      border: 4px solid black;
+
+  }
+  table td {
+    color: white;
+    font-weight: bold;
+    font-family: cursive;         
+  }
+
+  input {
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+  }
