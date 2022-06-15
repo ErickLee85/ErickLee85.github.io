@@ -23,11 +23,11 @@ async function getWeather() {
         document.getElementById("today-max").innerText = "Maximum Temp: " + (data["forecast"]["forecastday"][0]["day"]["maxtemp_f"]) + "°";
         document.getElementById("description").innerText = (data["current"]["condition"]["text"]);
         document.getElementById("humidity").innerText = "Humidity: " + (data["current"]["humidity"]) + "%";
-        document.getElementById("today-rain").innerText = "Chance of Rain: " + (data["forecast"]["forecastday"][0]["day"]["daily_will_it_rain"]) + "%";
+        document.getElementById("today-rain").innerText = "Chance of Rain: " + (data["forecast"]["forecastday"][0]["day"]["daily_chance_of_rain"]) + "%";
         document.getElementById("min-temp").innerText = "Minimum Temp: " + (data["forecast"]["forecastday"][1]["day"]["mintemp_f"]) + "°";
         document.getElementById("max-temp").innerText = "Maximum Temp: " + (data["forecast"]["forecastday"][1]["day"]["maxtemp_f"]) + "°";
         document.getElementById("tomorrow").innerText = "Tomorrow: " + (data["forecast"]["forecastday"][1]["date"]);
-        document.getElementById("rain").innerText = "Chance of Rain: " + (data["forecast"]["forecastday"][1]["day"]["daily_will_it_rain"]) + "%";
+        document.getElementById("rain").innerText = "Chance of Rain: " + (data["forecast"]["forecastday"][1]["day"]["daily_chance_of_rain"]) + "%";
 
         // document.getElementById("visibility").innerText = "Visibility: " + (data["current"]["vis_miles"]) + " miles";
         // document.getElementById("wind").innerText = "Wind Speed: " + (data["current"]["wind_mph"]) + " mph";
