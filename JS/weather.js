@@ -15,7 +15,7 @@ async function getWeather() {
 
         const response = await fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${userZip}&days=3`, options);
         const data = await response.json();
-        // console.log(data["forecast"]["forecastday"]);
+        // console.log(data["forecast"]["forecastday"][1]["day"]["condition"]["icon"]);
         document.getElementById("city").innerText = "Weather in " + (data["location"]["name"]) + ", " + (data["location"]["region"]);
         document.getElementById("apiIMG").innerHTML = `<img src="${data.current.condition.icon}"/>`;
         document.getElementById("temp").innerText = "Current Temp: " + (data["current"]["temp_f"]) + "°"
