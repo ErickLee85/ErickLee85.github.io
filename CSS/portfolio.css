@@ -78,7 +78,7 @@ img {
 
 /***** Navbar Styling *****/
 .Navbar {
-    overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+     /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
     background-color: rgba(0, 0, 0, 0.7); /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     display: inline-block;
@@ -89,11 +89,6 @@ img {
     animation: moveNav 3s; /* This makes the moveNav animation last 5 seconds */
 }
 
-/* The animation effect for moving the nav bar in from above the left of the screen on page load */
-@keyframes moveNav {
-    from {left: -100vw;} /* The navbar is starting off screen to the left */
-    to { left: 0vw;} /* This moves the navbar into place on the screen */
-}
 
 /*Navbar Links */
 .Navbar a {
@@ -125,6 +120,11 @@ img {
     float:right;
 }
 
+.Navbar button {
+    background-color: rgb(8,181,255,0.6);
+    border-radius: 10px;
+}
+
 .datetime {
     color: #ffff;
     padding-right:10px;
@@ -135,14 +135,8 @@ img {
     color:rgb(8, 181, 255);
 }
 
-/* The animation effect for moving the nav bar links in from above the top of the screen on page load */
-@keyframes moveNavText {
-    from {top: -100vw;} /* This sets the navbar text 100% above the viewport */
-    to {top: 0vw;} /* This lowers the navbar text onto the navbar */
-}
-
 .Navbar ul:hover li a {
-    opacity: 0
+    opacity: 1
 }
 
 /*Navbar hover effects */
@@ -157,6 +151,49 @@ img {
     background-color: darkgray;
 }
 
+.dropbtn {
+    color: white;
+    cursor: pointer;
+    height: 60px;
+    width: 80px;
+    margin-top: 10px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(38, 127, 150);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:rgb(8, 181, 255);
+  }
 /***** End of Navbar Styling *****/
 
 
@@ -177,15 +214,6 @@ img {
     animation: moveVideoText 5.75s; /* moveVideoText animation set to 5.75s to match the movenavText animation */
 }
 
-
-
-
-/* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
-@keyframes moveVideoText {
-    from {top: -100vw;} /* This sets the position of the video text to above the viewport */
-    to {top: 0vw;} /* This moves the video text to the normal positioning on the viewport */
-}
-/***** End of Video Styling *****/
 
 /***** Slideshow Styling *****/
 #Slideshow {

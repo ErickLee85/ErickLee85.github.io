@@ -27,8 +27,15 @@
                 <li><a href="https://github.com/ericklee85" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/crownedev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="https://docs.google.com/document/d/1rRvpRkSFRagDydHyR67bR9aB9Dws0jjHCKz6uPNxGwo/edit?usp=sharing" target="_blank">CV</a></li>
-                <li><a href="apiIndex.html"><i class="fa-solid fa-moon"></i></a></li>
-                <li><a href="weather.html"><i class="fa-solid fa-cloud-sun-rain"></i></a></li>
+                <li> <div class="dropdown">
+                    <button type="button" class="dropbtn">API</btn>
+                    <div class="dropdown-content">
+                    <a href="peopleInSpace.html">Astronauts in Space</a>
+                    <a href="nasaAPOD.html">Nasa APOD</a>
+                    <a href="weather.html">Local Weather</a>
+                    <a href="astronomy.html">Sun Rise</a>
+                    </div>
+                  </div> </li>              
                 <li class="datetime">
                     <div class="time"></div>
                     <div class="date"></div>
@@ -86,28 +93,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- About section -->
-        <div class="Row" id="About">
-            <!-- Left column -->
-            <div class="Column_2">
-                <div class="api_Content">
-                   
-                        <h1 id="api_Date"></h1>
-                        <h3 id="api_Title"></h3>
-                
-                    <div id="api_Img">
-                    </div>
-                </div>
-            </div>
-            <!-- Right column -->
-            <div class="Column_1 astro">
-                <p style="font-style:italic;">Astronomy Photo of Day using <span style="font-weight:bold;">NASA API</span></p>
-                
-               <h1 id="api_Description"></h1>
-            </div>
-        </div>
-
         <!-- GitHub section -->
         <div class="Row" id="GitHub">
             <!-- Left column -->
