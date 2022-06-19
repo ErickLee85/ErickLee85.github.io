@@ -84,7 +84,7 @@
             const data = await response.json();
     
             document.querySelector("#api_Title").innerHTML = (data["title"]);
-            document.querySelector("#api_Img").innerHTML = `<img src="${data.url}"/> <br/>`;
+            document.querySelector("#api_Img").innerHTML = `<img src="${data.url}" alt="Nasa APOD Image"/> <br/>`;
             document.querySelector("#api_Description").innerHTML = (data["explanation"]);
             document.querySelector("#api_Date").innerHTML = (data["date"]);
         }
