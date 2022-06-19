@@ -174,12 +174,19 @@ img {
   .dropdown-content {
     display: none;
     position: absolute;
+<<<<<<< HEAD
     background-color: #fdfdfd;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 15px;
     overflow:hidden;
+=======
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+>>>>>>> 0fb3c1cb7a95e62e508799f9b3ae0e6456b03a0f
   }
   
   .dropdown-content a {
@@ -189,6 +196,13 @@ img {
     text-decoration: none;
     display: block;
     text-align: left;
+<<<<<<< HEAD
+=======
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+>>>>>>> 0fb3c1cb7a95e62e508799f9b3ae0e6456b03a0f
   }
   
   .dropdown:hover .dropdown-content {
