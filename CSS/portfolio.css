@@ -154,24 +154,27 @@ img {
 .dropbtn {
     color: white;
     cursor: pointer;
-    height: 60px;
-    width: 80px;
+    height: 8vh;
+    width: 9vw;
     margin-top: 10px;
+    text-align: center;
   }
   
   .dropdown {
-    position: relative;
-    display: inline-block;
+    position: relative;  
+    display: inline-block; 
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: rgb(38, 127, 150);
-    min-width: 160px;
+    width: 35vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
   }
   
   .dropdown-content a {
@@ -179,13 +182,12 @@ img {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .dropdown:hover .dropdown-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:left;
+    align-items: left;
     flex-direction: column;
   }
   
@@ -197,20 +199,7 @@ img {
 
 
 
-/* Texts over the video */
-.Video_Text { /* This provides a semi-transparents background for the text to sit over */
-    color: white; /* Makes the font color white */
-    line-height: 1.2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensures the video-text container fills the width of the video */
-    height: 45vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
-    padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
-    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveVideoText 5.75s; /* Animation for Safari 4.0 - 8.0 */
-    animation: moveVideoText 5.75s; /* moveVideoText animation set to 5.75s to match the movenavText animation */
-}
+
 
 
 /***** Slideshow Styling *****/
