@@ -11,7 +11,7 @@ body {
     opacity: 1; /* This and transition affect the page loading fade in effect */
     transition: 3s opacity; /* This causes a 3 second fade in */
     letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
-    font-family: Avant Garde, Helvetica;
+    font-family: 'Joan', serif;
     font-size: 1.5vw; 
     overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
     user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
@@ -30,7 +30,7 @@ body.fade-out {
 /* Heading 1 elements */
 h1 {
     text-transform: uppercase; /*capitalizing all h1 headings */
-    font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
+    font-family: 'Joan', serif; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
@@ -572,7 +572,7 @@ img {
 
 /* General styling for all buttons */
 button {
-    font-family: "Trebuchet MS", Optima;
+    font-family: 'Joan', serif;
     letter-spacing: .3vw; /* Adds slight spacing between the letters */
     font-size: 1.5vw; /* Relative sizing of text */
     font-weight: bold; 
