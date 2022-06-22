@@ -1,3 +1,7 @@
+* {
+    font-family: 'Joan', serif;
+}
+
 input {
     padding-left: 15px;
     height: 35px;
@@ -28,7 +32,6 @@ body {
     width: 100%;
     max-width: 420px;
     margin: 1em;
-    font-family: 'Open Sans', sans-serif;
     margin-top: 50px;
     overflow-y: scroll;
     scrollbar-gutter: auto;
