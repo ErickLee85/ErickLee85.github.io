@@ -13,7 +13,7 @@ input {
 }
 
 body {
-    background-image: url("https://source.unsplash.com/1600x1200/?landscape");
+    background-image: url("../media/pexels-landscape.jpg");
     background-repeat: no repeat;
     background-size: cover;
     height: 100vh;
@@ -22,6 +22,11 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 25px;
+}
+
+.myLogo {
+    height: 150px;
+    width: 150px;
 }
 
 .my-container {

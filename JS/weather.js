@@ -29,9 +29,9 @@ async function getWeather() {
         document.getElementById("tomorrow").innerText = "Tomorrow: " + (data["forecast"]["forecastday"][1]["date"]);
         document.getElementById("rain").innerText = "Chance of Rain: " + (data["forecast"]["forecastday"][1]["day"]["daily_chance_of_rain"]) + "%";
 
-        // document.getElementById("visibility").innerText = "Visibility: " + (data["current"]["vis_miles"]) + " miles";
-        // document.getElementById("wind").innerText = "Wind Speed: " + (data["current"]["wind_mph"]) + " mph";
-        // document.getElementById("direction").innerText = "Wind Direction: " + (data["current"]["wind_dir"]);
-        // document.getElementById("gusts").innerText = "Wind Gusts: " + (data["current"]["gust_mph"]) + " mph";
-        // document.getElementById("precipitation").innerText = "Rain fall: " + (data["current"]["precip_in"]) + " in";            
+        document.getElementById("visibility").innerText = "Visibility: " + (data["current"]["vis_miles"]) + " miles";
+        document.getElementById("wind").innerText = "Wind Speed: " + (data["current"]["wind_mph"]) + " mph";
+        document.getElementById("direction").innerText = "Wind Direction: " + (data["current"]["wind_dir"]);
+        document.getElementById("gusts").innerText = "Wind Gusts: " + (data["current"]["gust_mph"]) + " mph";
+        document.getElementById("precipitation").innerText = "Rain fall: " + (data["current"]["precip_in"]) + " in";            
 }
