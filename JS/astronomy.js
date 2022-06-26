@@ -15,7 +15,7 @@ async function getUserCity() {
     };
 
     const response = await fetch(`https://weatherapi-com.p.rapidapi.com/astronomy.json?q=${userCity}`, options);
-    
+
     if(!response.ok) {
         alert("Something went wrong, please try again...");
     }
@@ -28,7 +28,7 @@ async function getUserCity() {
         document.getElementById("moonrise").innerHTML = (data["astronomy"]["astro"]["moonrise"]);
         document.getElementById("moonset").innerHTML = (data["astronomy"]["astro"]["moonset"]);
         document.getElementById("moonphase").innerHTML = (data["astronomy"]["astro"]["moon_phase"]);
-        document.getElementById("moonillumination").innerHTML = (data["astronomy"]["astro"]["moon_illumination"]);
+        document.getElementById("moonillumination").innerHTML = `${data["astronomy"]["astro"]["moon_illumination"]} %`;
         document.getElementById("country").innerHTML = (data["location"]["country"]);
         document.getElementById("lat").innerHTML = (data["location"]["lat"]);
         document.getElementById("long").innerHTML = (data["location"]["lon"]);
