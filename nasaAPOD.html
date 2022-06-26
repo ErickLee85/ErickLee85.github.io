@@ -44,6 +44,7 @@
             line-height: 2;
             font-size: large;
         }
+
         .myBtn {
             width: 100px;
             height: 35px;
@@ -67,14 +68,37 @@
             opacity: 1;
             transition: 0.3s ease-in-out;
         }
-    </style>
 
-    <h1 style="text-align: center;" id="api_Title"></h1>
+        .myContainer {
+            display: inline-block;
+            font-size: 40px;
+            margin-left: 23vw;
+  
+        }
+
+        .myContainer > * {
+            margin: 50px;
+        }
+
+
+    </style>
+    <div class="myContainer">
+        <span style="text-align: center;" id="api_Title"></span>
+            <img src="./media/telescope.png">
+    </div>
+
+
+
     <h3 style="text-align: center;" id="api_Date"></h3>
+
+ 
 
     <div id="api_Img"></div>
 
+
     <p id="api_Description"></p>
+  
+   
 
     <div class="home-button-container">
         <a href="index.html">
