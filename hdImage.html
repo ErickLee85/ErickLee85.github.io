@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD Nasa APOD Image</title>
+</head>
+<body onload="hdImage()">
+
+    <style>
+        body {
+            background-size: cover; 
+            background-repeat: no-repeat;
+            margin: 0;
+        }
+    </style>
+
+    <div id="api_Img">
+
+    </div>
+
+    <script>
+            async function hdImage() {
+            const APIKEY = 'OA1OUuOPLVxRuns39RWFzg9bldZ0r02kO8ylw4vD';
+            const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${APIKEY}`);
+            const data = await response.json();
+    
+            document.querySelector("#api_Img").innerHTML = `<img src="${data.hdurl}" alt="Nasa APOD Image"/> <br/>`;
+        }
+    </script>
+    
+</body>
+</html>
