@@ -337,6 +337,7 @@ img {
     align-items: center;
     line-height:1.25;
     margin-bottom: 15vh;
+    overflow: hidden;
 }
 .about-section p {
         line-height: 1.25;
