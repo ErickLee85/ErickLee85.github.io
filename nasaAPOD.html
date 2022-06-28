@@ -36,14 +36,41 @@
             justify-content: center;
             align-items: center;
         }
+        .isolation-container {
+            padding: clamp(3rem, 10vh, 6rem);
+            color: white;
+            font-weight: 700;
+            isolation: isolate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
         #api_Description {
+            padding: 1rem;
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 8em;
             line-height: 2;
             font-size: large;
+            }
+
+        #api_Description::after {
+            content: "";
+            position: absolute;
+            inset: -1em;
+            background: linear-gradient(to bottom right, rgb(35, 93, 255), rgb(255, 24, 217));
+            filter:blur(2em);
+            z-index: -1;
+            opacity: 0.8;
         }
+        /* #api_Description {
+         
+        } */
 
         .myBtn {
             width: 100px;
@@ -85,7 +112,6 @@
          min-width: 100px;
          height: 45px;
          background-color: rgba(234, 0, 255, 0.7);
-         display: 
          padding: 10px 10px;
         }
         .hdImageBtn:hover {
@@ -110,6 +136,8 @@
     <div id="api_Img">
         
     </div>
+
+
     <div style="text-align: center; margin-top: 5%;">
         <a href="hdImage.html" target="_blank">
             <button type="button" class="hdImageBtn">See HD Version</button>
@@ -117,8 +145,10 @@
     </div>
   
     
-    
-    <p id="api_Description"></p>
+    <div class="isolation-container">
+        <p id="api_Description"></p>
+      </div>
+   
   
     
   

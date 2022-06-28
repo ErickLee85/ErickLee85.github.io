@@ -15,7 +15,13 @@
       justify-content: center;
       align-items: center;
       margin-top: 5vh;
+  }
 
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
   }
   table {
       width: 400px;
@@ -45,4 +51,28 @@
   ::-webkit-scrollbar-thumb {
       background: linear-gradient(rgb(169, 41, 143), rgb(5, 5, 6));
       border-radius: 100vw;
+  }
+
+  .isolation-container {
+    padding: clamp(3rem, 10vh, 6rem);
+    color: white;
+    font-weight: 700;
+    isolation: isolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .isolation {
+    padding: 1rem;
+    position: relative;
+    }
+
+  .isolation::after {
+    content: "";
+    position: absolute;
+    inset: -1em;
+    background: linear-gradient(to bottom right, rgb(50, 84, 255), rgb(255, 24, 217));
+    filter:blur(1.5em);
+    z-index: -1;
   }
