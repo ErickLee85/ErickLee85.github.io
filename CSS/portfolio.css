@@ -135,21 +135,12 @@ img {
     color:rgb(8, 181, 255);
 }
 
-.Navbar ul:hover li a {
-    opacity: 1
-}
 
 /*Navbar hover effects */
-.Navbar ul li a:hover {
-    z-index: 1000;
+.Navbar ul li a:hover {   
     color:rgb(8, 181, 255);
-    opacity: 1; /* Creates a smooth transition for the hover trigger */
 }
 
-/* Navbar home button */
-.Navbar a.active { /* This targets the a element on the navbar with the "active" class */
-    background-color: darkgray;
-}
 
 .dropdown {
     float: left;
