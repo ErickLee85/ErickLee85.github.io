@@ -103,8 +103,13 @@ function useApiData(data) {
 
 
 //---------JQuery--------//
-$document.ready(function(){
+$(document).ready(function(){
   $("input").focus(function(){
-    $(this).css("background-color", "blue");
+    $(this).css("background-color", "lightblue");
+  });
+  $(document).ready(function(){
+    $("input").blur(function(){
+        $(this).css("background-color", "lightgray");
+    });
   });
 });

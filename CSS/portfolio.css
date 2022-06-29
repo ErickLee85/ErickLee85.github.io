@@ -598,12 +598,6 @@ img {
     font-size: 1vw; /* Relative font sizing based on the width of the viewport */
 }
 
-.form-container input:focus {
-    background-color: rgb(8, 181, 255,0.2);
-    transition: ease-in-out 0.5s;
-}
-
-
 /* General styling for all buttons */
 button {
     font-family: 'Joan', serif;
