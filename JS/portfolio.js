@@ -102,3 +102,9 @@ function useApiData(data) {
 }
 
 
+//---------JQuery--------//
+$document.ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "blue");
+  });
+});
