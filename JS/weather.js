@@ -20,7 +20,7 @@ async function getWeather() {
 
         else {
             const data = await response.json();
-            document.getElementById("city").innerText = "Weather in " + (data["location"]["name"]) + ", " + (data["location"]["region"]);
+            document.getElementById("city").innerText = (data["location"]["name"]) + ", " + (data["location"]["region"]);
             document.getElementById("apiIMG").innerHTML = `<img src="${data.current.condition.icon}"/>`;
             document.getElementById("temp").innerText = "Current Temp: " + (data["current"]["temp_f"]) + "°"
             document.getElementById("feels-like").innerText = "Feels like: " + (data["current"]["feelslike_f"]) + "°";
