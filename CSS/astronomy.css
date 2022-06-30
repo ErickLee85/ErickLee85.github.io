@@ -72,7 +72,7 @@
     content: "";
     position: absolute;
     inset: -1em;
-    background: linear-gradient(to bottom right, rgb(50, 84, 255), rgb(255, 24, 217));
+    background-color: rgb(235,74,128,0.8);
     filter:blur(1.5em);
     z-index: -1;
   }

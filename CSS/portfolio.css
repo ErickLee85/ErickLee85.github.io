@@ -556,6 +556,7 @@ img {
     cursor: pointer; /* This changes the cursor when hovered over the button to a pointer */
     -webkit-animation: movePopup 5s; /* Animation for 5 seconds for Safari 4.0-8.0 */
     animation: movePopup 5s; /* Animation set for 5 seconds */
+    background: linear-gradient(to bottom right, rgb(50, 84, 255), rgb(255, 24, 217));
 }
 
 /* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
@@ -613,10 +614,10 @@ button {
 /* Hover effect for contact and submit buttons */
 button:hover, .form-container .btn:hover {
     color: rgb(255, 255, 255); /* This makes the text in the buttons white when hovered over */
-    background-color: rgb(48, 45, 206); /* The background of the button changes to black when hovered over */
-    transition-duration: 2s; /* This makes the transition last 1 second */
+    background-color: rgb(41, 116, 169); /* The background of the button changes to black when hovered over */
+    transition-duration: 1s; /* This makes the transition last 1 second */
     -webkit-transition-duration: 2s; /* For Safari 4.0-8.0 */
-    border-color: silver; /* The border turns silver when the button is hovered over */
+    border-color: rgb(255, 255, 255); /* The border turns silver when the button is hovered over */
 }
 
 /* Submit button */

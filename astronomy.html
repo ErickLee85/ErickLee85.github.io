@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <title>Astronomy</title>
 </head>
 <body>
@@ -19,8 +22,10 @@
     
     <div class="container">
         <fieldset>
-            <input type="text" id="cityGET" class="input" placeholder="City, State">
-            <button type="button" class="btn btn-primary" id="btnGET" onclick="getUserCity()">Search</button>   
+            <input type="text" id="cityGET" class="input" placeholder="City, State">            
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="btnGET" onclick="getUserCity()">
+              Search
+            </button>   
         </fieldset>
     </div>
 
@@ -70,7 +75,11 @@
 
     <div class="btn-container">     
         <a href="index.html">
-          <button type="button" class="btn btn-danger btn-lg">Home</button>
+          <!-- Accent-colored raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Home
+        </button>
+
         </a>    
     </div>
 

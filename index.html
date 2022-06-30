@@ -4,13 +4,15 @@
     <!-- Head -->
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/aec8d5c56a.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script type="text/javascript" src="JS/portfolio.js" defer></script>
         
     </head>
@@ -139,14 +141,14 @@
            <div class="form-popup" id="myForm">
                 <form action="https://formspree.io/f/xjvlzaao" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
                     <h1>Contact</h1>
+      
+                       <input type="text" placeholder="Name..." name="name" required>
                    
-                      <input type="text" placeholder="First and last name" name="name" required>
+                      <input type="text" placeholder="Cell..." name="phone" required>
                    
-                      <input type="text" placeholder="Phone Number" name="phone" required>
-                   
-                      <input type="text" placeholder="Email Address" name="email" required>
+                      <input type="text" placeholder="Email..." name="email" required>
                     
-                      <input type="text" placeholder="Message" name="message" required>
+                      <input type="text" placeholder="Message..." name="message" required> 
          
                     <button type="submit" class="btn">SUBMIT</button>
                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
