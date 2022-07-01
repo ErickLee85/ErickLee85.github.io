@@ -72,7 +72,7 @@
     content: "";
     position: absolute;
     inset: -1em;
-    background-color: rgb(235,74,128,0.8);
+    background-color: rgba(163, 0, 199, 0.2);
     filter:blur(1.5em);
     z-index: -1;
   }

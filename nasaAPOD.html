@@ -49,6 +49,7 @@
             align-items: center;
             padding-left: 10%;
             padding-right: 10%;
+            margin-top: 5vh;
         }
 
         #api_Description {
@@ -106,7 +107,12 @@
 
 
     <h3 style="text-align: center;" id="api_Date"></h3>
-
+    <div style="text-align: center; margin-bottom: 2vh;">
+        <p style="color: white;">Search for specific Date</p>
+        <input  style="height: 30px; font-size: medium;" type="text" id="userDateInput" placeholder="Year-Month-Day">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-left: 10px;"onclick="searchDate()">Search</button>
+    
+    </div>
  
 
     <div id="api_Img">
@@ -114,14 +120,14 @@
     </div>
 
 
-    <div style="text-align: center; margin-top: 5%;">
+    <!-- <div style="text-align: center; margin-top: 5%;">
         <a href="hdImage.html" target="_blank">
             <!-- Accent-colored raised button with ripple -->
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                 See HD Image
-            </button>
-        </a>
-    </div>
+            </button> -->
+        <!-- </a>
+    </div> --> 
   
     
     <div class="isolation-container">
@@ -142,11 +148,32 @@
     </div>
     
     <script>
+
+        async function searchDate() {
+            let APIKEY = 'OA1OUuOPLVxRuns39RWFzg9bldZ0r02kO8ylw4vD';
+            let userDate = document.getElementById("userDateInput").value;
+
+            if (!userDate) {
+                alert("Please enter a date.");
+            }
+            let response = await fetch (`https://api.nasa.gov/planetary/apod?api_key=${APIKEY}&date=${userDate}`);
+
+            if (!response.ok) {
+                alert("Please enter the date in this format Year-Month-Day ( 2022-12-01 ) ");
+            }
+            else {
+                let data = await response.json();
+                document.querySelector("#api_Title").innerHTML = (data["title"]);
+                document.querySelector("#api_Img").innerHTML = `<img src="${data.url}" alt="Nasa APOD Image"/> <br/>`;
+                document.querySelector("#api_Description").innerHTML = (data["explanation"]);
+                document.querySelector("#api_Date").innerHTML = (data["date"]);
+            }
+        }
         
         async function sendApiReq() {
-            const APIKEY = 'OA1OUuOPLVxRuns39RWFzg9bldZ0r02kO8ylw4vD';
-            const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${APIKEY}`);
-            const data = await response.json();
+            let APIKEY = 'OA1OUuOPLVxRuns39RWFzg9bldZ0r02kO8ylw4vD';
+            let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${APIKEY}`);
+            let data = await response.json();
     
             document.querySelector("#api_Title").innerHTML = (data["title"]);
             document.querySelector("#api_Img").innerHTML = `<img src="${data.url}" alt="Nasa APOD Image"/> <br/>`;
